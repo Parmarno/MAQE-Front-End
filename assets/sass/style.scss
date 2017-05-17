@@ -1,0 +1,117 @@
+$color_gray_light: #F7F7F7;
+$color_blue_sky : #67C3E9;
+$color_green_light: #9dd5d1;
+$color_green_white: #9BD6E4;
+$color_white : #fff;
+$color_white_minimal: #F7F7F7;
+
+$space : 15px;
+$boxes_width : 858px;
+$boxes_height : 858px;
+$border-radius : 25px;
+
+body{   
+    background-color: $color_gray_light;
+    padding: 40px;  
+} 
+
+.boxes{
+    position: relative;
+    margin: 0 auto;
+    padding: $space;
+
+    width: $boxes_width;
+    height: $boxes_height;
+    border-radius: $border-radius;
+    background-color: $color_blue_sky;
+    -webkit-box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.14);
+    -moz-box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.14);
+    box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.14);
+
+    .inner{
+        border-radius: $border-radius;
+        background-color: $color_white;
+        
+        display: block;
+        
+        height:auto;
+        bottom:0;
+        top:0;
+        left:0;
+        right:0;
+        margin: $space;
+    }
+
+    .main{
+        border-radius: $border-radius;
+        background: $color_blue_sky;
+        background: -moz-linear-gradient(top, $color_blue_sky 0%, $color_green_light 100%);
+        background: -webkit-gradient(left top, left bottom, color-stop(0%, $color_blue_sky), color-stop(100%, $color_green_light));
+        background: -webkit-linear-gradient(top, $color_blue_sky 0%, $color_green_light 100%);
+        background: -o-linear-gradient(top, $color_blue_sky 0%, $color_green_light 100%);
+        background: -ms-linear-gradient(top, $color_blue_sky 0%, $color_green_light 100%);
+        background: linear-gradient(to bottom, $color_blue_sky 0%, $color_green_light 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$color_blue_sky', endColorstr='$color_green_light', GradientType=0 );
+
+        display: block;
+        height:auto;
+        bottom:0;
+        top:0;
+        left:0;
+        right:0;
+        margin: $space;
+    }
+
+    .center-boxes{
+        background-color: $color_green_white;
+        bottom:188px;
+        top:188px;
+        left:188px;
+        right:188px;
+        display: block;
+        height:auto;
+        z-index: 1;
+    }
+
+    .base-boxes{
+        background-color: $color_white_minimal;
+        border-radius: 5px;
+        display: table;
+        height:300px;
+        width:300px;
+        -webkit-box-shadow: inset 0px 0px 10px 0px rgba(0,0,0,0.75);
+        -moz-box-shadow: inset 0px 0px 10px 0px rgba(0,0,0,0.75);
+        box-shadow: inset 0px 0px 10px 0px rgba(0,0,0,0.75);
+        z-index: 2;
+
+        p{
+            color: $color_blue_sky;
+            display: table-cell; 
+            vertical-align: middle;
+            text-align: center;
+            margin: 0;
+            font-size: 7em;
+            text-shadow: 2px 2px 0px rgba(150, 150, 150, 1);
+        }
+    }
+
+    .absolute{
+        position:absolute;
+    }
+
+    .left{
+        left: 75px;
+    }
+
+    .right{
+        right: 75px;
+    }
+
+    .bottom{
+        bottom: 75px;
+    }
+
+    .top{
+        top: 75px;
+    }
+}

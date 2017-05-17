@@ -10,12 +10,12 @@ body {
   height: 858px;
   border-radius: 25px;
   background-color: #67C3E9;
-  -webkit-box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.14);
-  -moz-box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.14);
-  box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.14); }
+  -webkit-box-shadow: 20px 20px 20px 0px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 20px 20px 20px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 20px 20px 20px 0px rgba(0, 0, 0, 0.2); }
   .boxes .inner {
     border-radius: 25px;
-    background-color: #fff;
+    background-color: #F7F7F7;
     display: block;
     height: auto;
     bottom: 0;
@@ -55,9 +55,9 @@ body {
     display: table;
     height: 300px;
     width: 300px;
-    -webkit-box-shadow: inset 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: inset 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
-    box-shadow: inset 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: inset 5px 0px 10px 5px rgba(0, 0, 0, 0.27);
+    -moz-box-shadow: inset 5px 0px 10px 5px rgba(0, 0, 0, 0.27);
+    box-shadow: inset 5px 0px 10px 5px rgba(0, 0, 0, 0.27);
     z-index: 2; }
     .boxes .base-boxes p {
       color: #67C3E9;
